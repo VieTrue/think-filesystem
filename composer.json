@@ -1,0 +1,21 @@
+{
+    "name": "vietrue/think-filesystem",
+    "type": "library",
+    "require": {
+        "php": ">=7.2.5",
+        "topthink/think-filesystem": "^1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "think\\filesystem\\driver\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VieTrue",
+            "email": "vietrue@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
