@@ -2,13 +2,20 @@
     "name": "vietrue/think-filesystem",
     "type": "library",
     "require": {
-        "php": ">=7.2.5",
-        "topthink/think-filesystem": "^1.0"
+        "aliyuncs/oss-sdk-php": "~2.4",
+        "overtrue/flysystem-qiniu": "^2.0"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "think\\filesystem\\driver\\": "src/"
+            "vietrue\\filesystem\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "vietrue\\filesystem\\Service"
+            ]
         }
     },
     "authors": [
