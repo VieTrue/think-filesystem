@@ -1,10 +1,10 @@
 <?php
 declare (strict_types=1);
 
-namespace vietrue\filesystem;
+namespace Vietrue\Filesystem;
 
 use InvalidArgumentException;
-use vietrue\filesystem\Driver;
+use Vietrue\Filesystem\Driver;
 use think\helper\Arr;
 use think\Manager;
 
@@ -16,7 +16,7 @@ use think\Manager;
  */
 class Filesystem extends Manager
 {
-    protected $namespace = '\\vietrue\\filesystem\\driver\\';
+    protected $namespace = '\\Vietrue\\Filesystem\\Driver\\';
 
     /**
      * @param null|string $name

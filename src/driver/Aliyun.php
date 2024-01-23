@@ -1,21 +1,18 @@
 <?php
 
-namespace vietrue\filesystem\driver;
-
-use League\Flysystem\AdapterInterface;
-use League\Flysystem\Adapter\Local as LocalAdapter;
+namespace Vietrue\Filesystem\driver;
 
 use League\Flysystem\FilesystemAdapter;
-use OSS\OssClient;
-use OSS\Core\OssException;
-use vietrue\filesystem\adapter\OssAdapter;
-use vietrue\filesystem\Driver;
+use Vietrue\Flysystem\OssAdapter;
+use Vietrue\Filesystem\Driver;
 
 class Aliyun extends Driver
 {
     protected $config = [
         'accessId'     => '',
         'accessSecret' => '',
+        'prefix'       => '',
+        'is_cname'     => false,
         'endpoint'     => '',
         'bucket'       => '',
         'domain'       => '',
@@ -28,7 +25,7 @@ class Aliyun extends Driver
      */
     protected function createAdapter(): FilesystemAdapter
     {
-        return new OssAdapter($this->config['accessId'], $this->config['accessSecret'], $this->config['endpoint'], $this->config['bucket']);
+        return new OssAdapter($this->config['accessId'], $this->config['accessSecret'], $this->config['endpoint'], $this->config['bucket'], $this->config['is_cname'], $this->config['prefix']);
     }
 
 }

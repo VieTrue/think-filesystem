@@ -1,28 +1,26 @@
 {
     "name": "vietrue/think-filesystem",
-    "type": "library",
-    "require": {
-        "aliyuncs/oss-sdk-php": "~2.4",
-        "overtrue/flysystem-qiniu": "^2.0"
-    },
+    "description": "thinkphp debug trace",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "vietrue\\filesystem\\": "src"
-        }
-    },
-    "extra": {
-        "think": {
-            "services": [
-                "vietrue\\filesystem\\Service"
-            ]
-        }
-    },
     "authors": [
         {
             "name": "VieTrue",
             "email": "vietrue@qq.com"
         }
     ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Vietrue\\Filesystem\\": "src"
+        }
+    },
+    "extra": {
+        "think":{
+            "services":[
+                "Vietrue\\Filesystem\\Service"
+            ]
+        }
+    },
     "minimum-stability": "dev"
 }

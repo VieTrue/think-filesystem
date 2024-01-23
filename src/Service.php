@@ -1,6 +1,6 @@
 <?php
 
-namespace vietrue\filesystem;
+namespace Vietrue\Filesystem;
 
 class Service extends \think\Service
 {

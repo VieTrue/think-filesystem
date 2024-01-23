@@ -2,7 +2,7 @@
 
 declare (strict_types=1);
 
-namespace vietrue\filesystem;
+namespace Vietrue\Filesystem;
 
 use League\Flysystem\Filesystem;
 use League\Flysystem\FilesystemAdapter;

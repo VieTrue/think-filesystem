@@ -1,12 +1,11 @@
 <?php
 
-namespace vietrue\filesystem\driver;
+namespace Vietrue\Filesystem\Driver;
 
 use League\Flysystem\Filesystem;
 use League\Flysystem\FilesystemAdapter;
-use Overtrue\Flysystem\Qiniu\QiniuAdapter;
-use Overtrue\Flysystem\Qiniu\Plugins\FetchFile;
-use vietrue\filesystem\Driver;
+use Vietrue\Flysystem\QiniuAdapter;
+use Vietrue\Filesystem\Driver;
 
 class Qiniu extends Driver
 {
